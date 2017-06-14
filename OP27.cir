@@ -1,0 +1,213 @@
+* OP27
+*-------------------------------------------------------------------------------
+*
+*-------------------------------------------------------------------------------
+
+.PRINT TRAN DELIMITER=TAB V(101) V(Vout)
+.TRAN 1u 10m
+
+*** Capacitors ***
+*V(+)           3
+*V(-)           5
+*IN(+)          1
+*IN(-)          2
+*OUT            53
+*Vos Trim1      67 (not used-leave floating)
+*Vos Trim2      68 (not used-leave floating)
+
+*** Capacitor Data ***
+C_C1 30 63 79.6p
+C_C10FB Vout 2 5.3n IC=0
+C_C11IN 100 0 5.5n IC=-5
+C_C2 3 13 159p
+C_C3 41 64 104p
+C_C4 30 58 21.9p
+
+*** Input components ***
+C_C5INP 1 0 147n
+C_C6P1 3 0 47u
+C_C7P2 3 0 10n
+C_C8P3 5 0 47u
+C_C9P4 5 0 10n
+
+*** Transistors ***
+Q_Q1 1 1 2  QNPN 1.7453
+Q_Q10 5 10 9  QVPNP 1.4492
+Q_Q11 10 11 12  QNPN 0.6283
+Q_Q12a 13 2 11  QNPN 1.7535
+Q_Q12b 13 2 11  QNPN 1.7535
+Q_Q13a 14 0 11  QNPN 1.7535
+Q_Q13b 14 0 11  QNPN 1.7535
+Q_Q14 5 11 12  QVPNP 1.2262
+Q_Q15 5 11 15  QVPNP 1.2262
+Q_Q16 16 12 15  QNPN 1.7535
+Q_Q17 17 12 15  QNPN 1.7535
+Q_Q18 3 14 17  QNPN 0.7757
+Q_Q19 3 13 16  QNPN 0.7757
+Q_Q2 2 2 1  QNPN 1.7453
+Q_Q20 11 18 20  QNPN 2.4241
+Q_Q21 15 18 19  QNPN 1.212
+Q_Q22 21 18 24  QNPN 1.212
+Q_Q23 22 18 25  QNPN 0.6283
+Q_Q24 23 18 26  QNPN 2.5133
+Q_Q25 29 17 27  QLPNP 1.1111
+Q_Q26 30 16 28  QLPNP 1.1111
+Q_Q27 30 32 33  QNPN 0.6283
+Q_Q28 29 32 34  QNPN 0.6283
+Q_Q29 3 29 32  QNPN 0.6283
+Q_Q3 8 4 3  QLPNP 1.1111
+Q_Q30 39 38 35  QLPNP 1.6799
+Q_Q31 40 38 36  QLPNP 1.2968
+Q_Q32 41 38 37  QLPNP 2.0631
+Q_Q33 31 42 39  QLPNP 1.875
+Q_Q34 42 42 39  QLPNP 416.7m
+Q_Q35 21 21 3  QLPNP 0.5787
+Q_Q36 43 21 3  QLPNP 0.5787
+Q_Q37 43 21 3  QLPNP 0.5787
+Q_Q38 43 21 3  QLPNP 0.5787
+Q_Q39 3 22 18  QNPN 496.4m
+Q_Q4 7 4 3  QLPNP 1.1111
+Q_Q40 4 44 5  QNPN 0.6283
+Q_Q41 45 45 44  QNPN 0.6283
+Q_Q42 23 23 46  QLPNP 1.1111
+Q_Q43 22 23 47  QLPNP 1.1111
+Q_Q44 3 41 48  QNPN 3.2593
+Q_Q45 40 48 49  QLPNP 1.1111
+Q_Q46 5 48 50  QVPNP 49.1598
+Q_Q47 51 48 50  QNPN 0.6283
+Q_Q48 48 40 52  QNPN 1.7453
+Q_Q49 40 40 5  QNPN 0.6283
+Q_Q5 6 4 3  QLPNP 1.1111
+Q_Q50 55 54 Vout  QNPN 0.6283
+Q_Q51 3 55 54  QNPN 6.4198
+Q_Q52 56 50 Vout  QLPNP 1.1111
+Q_Q53 5 51 43  QVPNP 4.7655
+Q_Q54 51 60 62  QNPN 1.7453
+Q_Q55 3 30 60  QNPN 0.6283
+Q_Q56 5 42 61  QVPNP 1.2607
+Q_Q6 2 9 8  QLPNP 1.1111
+Q_Q7 1 9 7  QLPNP 1.1111
+Q_Q8 10 9 6  QLPNP 1.1111
+Q_Q9 5 6 4  QVPNP 1.2262
+Q_Qz1 3 69 67  QNPN 0.6283
+Q_Qz2 3 71 69  QNPN 0.6283
+Q_Qz3 3 72 71  QNPN 0.6283
+Q_Qz4 3 74 72  QNPN 0.6283
+Q_Qz5 3 81 68  QNPN 0.6283
+
+*** Resistors ***
+*** Resistor Data ***
+R_R1 19 5 536.25
+R_R10 34 5 89.4
+R_R11 33 5 89.4
+R_R12 3 35 137.5
+R_R13 3 36 754.3
+R_R14 3 37 107.6
+R_R15 45 22 44.9183k
+R_R16 46 42 1.485k
+R_R17 47 42 1.485k
+R_R18 45 3 608.7223k
+R_R19 52 5 693
+R_R2 20 5 536.25
+R_R20 49 Vout 804.4
+R_R21 Vout 54 9.8
+R_R22 Vout 50 9.8
+R_R23 56 57 555
+R_R24 57 32 360
+R_R25 55 43 1.2375k
+R_R26 58 41 266.5
+R_R27 59 32 4.7614k
+R_R28 59 5 1.7679k
+R_R29 59 60 4.4314k
+R_R3 20 5 536.25
+R_R30 61 38 330
+R_R31 62 5 41.3
+R_R32 41 51 74.5
+R_R33 14 63 88
+R_R34 14 64 577.5
+R_R35 3 65 2.55k
+R_R36 65 67 2.55k
+R_R37 3 66 2.55k
+R_R38 66 68 2.55k
+R_R39 67 70 158.6
+R_R4 24 5 536.25
+R_R40 70 69 158.6
+R_R41 69 71 158.6
+R_R42 71 72 158.6
+R_R43 71 72 158.6
+R_R44 72 73 158.6
+R_R45 72 73 158.6
+R_R46 14 75 9.15k
+R_R47 13 76 9.15k
+R_R48 81 76 9.15k
+R_R49 73 75 9.15k
+R_R5 25 5 429
+R_R50 80 81 158.6
+R_R51 80 81 158.6
+R_R52 79 80 158.6
+R_R53 79 80 158.6
+R_R54 78 79 158.6
+R_R55 77 78 158.6
+R_R56 68 77 158.6
+R_R57 73 74 158.6
+R_R58 73 74 158.6
+R_R59 1 0 1k
+R_R6 25 26 742.5
+R_R60 2 100 1k
+R_R61 100 101 1k
+R_R62 Vout 100 1k
+R_R7 27 31 707.1
+R_R8 28 31 707.1
+R_R9 29 30 25.692k
+
+*** Sources ***
+*** Voltage Data ***
+V0 3 0 DC 12
+V1 5 0 DC -12
+VIN 101 0 sin(0V 5V 1kHz)
+
+*** Start Model Definitions ***
+*** use some other transistor derived rad parameters
+
+.MODEL QNPN NPN ( LEVEL  = 1
++ IS     = 1.85277E-16     BF     = 89.2            NF     = 0.9975
++ BR     = 0.505           NR     = 0.995604        ISE    = 5.24807E-16
++ NE     = 1.912           ISC    = 1.35479E-15     NC     = 1.03338
++ VAF    = 309.217         VAR    = 24.388          IKF    = 5.24807E-3
++ IKR    = 0.0191342       RB     = 100
++ RBM    = 0.1             IRB    = 1.01E-6         RE     = 4.21456
++ RC     = 197.969         TF     = 1E-10
++ XTF    = 1               ITF    = 0.01            VTF    = 5
++ PTF    = 20              TR     = 1E-8            XTB    = 0
++ EG     = 1.17
++ CJE=1.06p VJE=0.77 MJE=0.246 CJC=1.59p VJC=0.785 MJC=0.194 CJS=5p VJS=0.708 MJS=0.304)
+
+.MODEL QLPNP PNP (LEVEL  = 1
++ IS     = 5.999635E-15    BF     = 378.2669158     NF     = 1.0841971
++ BR     = 135.482426      NR     = 1.05            ISE    = 1.06722E-15
++ NE     = 1.5497752       ISC    = 2.664285E-15    NC     = 1.4111948
++ VAF    = 39.1181         VAR    = 25.9038257      IKF    = 2.3926E-4
++ IKR    = 3.745563E-5     RB     = 342.1806875
++ RBM    = 100             IRB    = 4.75632E-4      RE     = 0
++ RC     = 0               TF     = 1E-10
++ XTF    = 1               ITF    = 0.01            VTF    = 5
++ PTF    = 20              TR     = 1E-8            XTB    = 0
++ EG     = 1.17
++ CJE=1.38p VJE=0.596 MJE=0.052 CJC=2.08p VJC=0.744 MJC=0.134
++ CJS=2.18p VJS=1.062 MJS=0.017)
+
+.MODEL QVPNP PNP (LEVEL  = 1
++ IS     = 1.910728E-15    BF     = 3.609126E3      NF     = 0.9978895
++ BR     = 0.3369848       NR     = 0.9742775       ISE    = 4.341141E-17
++ NE     = 1.1174228       ISC    = 5.397116E-16    NC     = 1.0055126
++ VAF    = 44.0519562      VAR    = 19.6963495      IKF    = 1.95239E-4
++ IKR    = 1.488406E-4     RB     = 2.120287E4
++ RBM    = 0               IRB    = 1.020318E-8     RE     = 0.4715013
++ RC     = 115.7868121     TF     = 1E-10
++ XTF    = 1               ITF    = 0.01            VTF    = 5
++ PTF    = 20              TR     = 1E-8            XTB    = 0
++ EG     = 1.17
++ CJE=1.42p VJE=0.851 MJE=0.058 CJC=3.62p VJC=0.672 MJC=0.189 )
+
+*** End Model Definitions ***
+.END

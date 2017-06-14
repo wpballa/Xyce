@@ -1,0 +1,9 @@
+#!/bin/bash
+$HOME/Downloads/Xyce-6.7/configure \
+ARCHDIR=$HOME/XyceLibs/Serial12.6.3 \
+CPPFLAGS="-I/usr/include/suitesparse -I/usr/local/include" \
+CXXFLAGS="-O3" \
+ADMS_CXXFLAGS="-O0" \
+LDFLAGS="-L/usr/local/lib" \
+CFLAGS="-O3" \
+--disable-adms_sensitivities
