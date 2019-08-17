@@ -1,6 +1,6 @@
 #!/bin/bash
-SRCDIR=$HOME/Downloads/trilinos-12.6.3-Source
-ARCHDIR=$HOME/XyceLibs/Serial12.6.3
+SRCDIR=$HOME/Downloads/trilinos-12.12.1-Source
+ARCHDIR=$HOME/XyceLibs/Serial12.12.1
 FLAGS="-O3 -fPIC"
 cmake \
 -G "Unix Makefiles" \
