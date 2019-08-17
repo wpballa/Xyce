@@ -1,6 +1,6 @@
 #!/bin/bash
-$HOME/Downloads/Xyce-6.7/configure \
-ARCHDIR=$HOME/XyceLibs/Serial12.6.3 \
+$HOME/Downloads/Xyce-6.11.1/configure \
+ARCHDIR=$HOME/XyceLibs/Serial12.12.1 \
 CPPFLAGS="-I/usr/include/suitesparse -I/usr/local/include" \
 CXXFLAGS="-O3" \
 ADMS_CXXFLAGS="-O0" \
