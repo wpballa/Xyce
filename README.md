@@ -1,6 +1,5 @@
 # Xyce
-Build instructions for Xyce 6.11.1 on a Raspberry Pi Model 4B with Buster
-For 6.12 just change 6.11.1 to 6.12 in the instructions and everything works fine.
-Also applies to Model 3 B+ and Model 3 B using Jessie.
+Build instructions for Xyce 7.0 on a Raspberry Pi Model 4B with Buster.
+It should also work on a model 3B+ or 3B but with longer compile times.
 
 Read the pdf for full instructions
